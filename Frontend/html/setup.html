@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Takel Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" type="text/css" media="screen" href="style/screen2.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+    integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+
+
+  <!-- Script -->
+  <script defer src="./script/setup.js"></script>
+</head>
+
+<body>
+
+
+  <div class="o-row--header c-header">
+    
+
+      <button class="c-arrow-left js-back">
+        <svg class="c-btn-back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <polygon
+            points="3.828 9 9.899 2.929 8.485 1.515 0 10 .707 10.707 8.485 18.485 9.899 17.071 3.828 11 20 11 20 9 3.828 9" />
+          </svg>
+      </button>
+
+
+      <button class="c-btn-find">Find devices</button>
+
+   
+  </div>
+
+  <div class="o-row o-row--lg"></div>
+
+  <div class="o-row">
+    <div class="o-container">
+
+      <div class="c-setup">
+        <div class="c-setup__name">
+          <div class="js-name">Name: Takel 1</div>
+          <div class="js-ip">IP: ***.***.***.***</div>
+        </div>
+
+        <div class="o-layout c-setup--footer">
+          <div class="o-layout__item u-1-of-3 c-sldr">
+            <input type="range" min="0" max="255" value="0" class="c-slider js-slider" id="myRange">
+          </div>
+
+          <div class="o-layout__item u-2-of-3">
+            <label class="c-input" for="sub">Subnet:</label>
+            <input type="text" class="c-input__box js-sub" id="sub" size=5>
+
+            <br>
+
+            <label class="c-input" for="uni">Universe:</label>
+            <input type="text" class="c-input__box js-uni" id="uni" size=5>
+
+            <br>
+
+            <label class="c-input" for="chan">Channel:</label>
+            <input type="text" class="c-input__box js-chan" id="chan" size=5>
+
+            <br>
+
+            <label class="c-input" for="spd">Speed:</label>
+            <input type="text" class="c-input__box js-speed" id="spd" size=5>
+
+            <br>
+
+            <div class="c-btns">
+              <button class="c-btn-sub js-submit">Set values</button>
+
+              <button class="c-btn-sub js-set-zero">Set zero</button>
+            </div>
+
+            
+
+            <div class="o-layout">
+              <div class="o-layout__item u-1-of-2">
+                <button class="c-arrow js-mv-up">
+                  <svg class="c-btn__symbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                      d="M10 0a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm2 8v5H8v-5H5l5-5 5 5h-3z" />
+                  </svg>
+                </button>
+
+                <button class="c-arrow js-mv-down">
+                  <svg class="c-btn__symbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                      d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2-8V5h4v5h3l-5 5-5-5h3z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="o-layout__item u-1-of-2">
+                <div class="c-set-container">
+                  <button class="c-btn__set js-top" type="button">Set top</button>
+                </div>
+
+                <div class="c-set-container">
+                  <button class="c-btn__set js-low" type="button">Set low</button>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  </main>
+</body>
+
+</html>
